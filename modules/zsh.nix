@@ -1,3 +1,5 @@
+{ pkgs, ... }:
+
 {
   programs.zsh = {
     enable = true;
@@ -21,4 +23,5 @@
 
   # Prevent the new user dialog in zsh
   system.userActivationScripts.zshrc = "touch .zshrc";
+  users.defaultUserShell = pkgs.zsh;
 }

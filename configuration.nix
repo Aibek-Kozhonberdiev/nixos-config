@@ -83,13 +83,16 @@
     isNormalUser = true;
     description = "aiba";
     home = "/home/aiba";
-    extraGroups = [ "networkmanager" "wheel" ];
+    extraGroups = [ "networkmanager" "wheel" "docker" ];
     shell = pkgs.zsh;
     packages = with pkgs; [];
   };
 
   # Enable the OpenSSH daemon.
   services.openssh.enable = true;
+
+  # Enable the Docker daemon.
+  virtualisation.docker.enable = true;
 
   # Enable the Flatpak.
   services.flatpak.enable = true;

@@ -29,6 +29,7 @@
     tree
     htop
     mcrcon
+    docker-compose
 
     # Language runtimes & toolchains
     python314

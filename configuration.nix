@@ -16,6 +16,19 @@
   # Kernel
   boot.kernelPackages = pkgs.linuxPackages_latest;
 
+  # AMD driver
+  # hardware = {
+  #   graphics = {
+  #       enable = true;
+  #       enable32Bit = true;
+  #   };
+
+  #   amdgpu.amdvlk = {
+  #       enable = true;
+  #       support32Bit.enable = true;
+  #   };
+  # };
+
   networking.hostName = "nixos"; # Define your hostname.
 
   # Enable networking

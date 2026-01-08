@@ -19,6 +19,7 @@
     winbox4
     video-downloader
     vlc
+    prismlauncher
     libreoffice-qt
     hunspell
     hunspellDicts.ru_RU

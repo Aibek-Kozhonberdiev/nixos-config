@@ -3,6 +3,7 @@
 { pkgs, ... }:
 
 {
+  # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
 
   # List packages installed in system profile. To search, run:
@@ -13,9 +14,7 @@
     gimp
     obs-studio
     droidcam
-    kdePackages.kdenlive
     discord
-    qbittorrent
     winbox4
     video-downloader
     vlc
@@ -23,6 +22,10 @@
     libreoffice-qt
     hunspell
     hunspellDicts.ru_RU
+
+    # KDE
+    kdePackages.kdenlive
+    kdePackages.ktorrent
 
     # CLI utils
     fastfetch
